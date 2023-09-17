@@ -9,7 +9,7 @@ namespace HackerRankSolutions
     public class QueensAttackII
     {
         /// <summary>
-        /// Asagidaki kod sonucu dogru veriyor ancak O(n^2) zamanda calistigi icin verimli degil. Commentlenen kodun altinda optimize edilmis metot blogu bulunmaktadir.
+        /// Asagidaki kod, sonucu dogru veriyor ancak O(n^2) zamanda calistigi icin verimli degil. Commentlenen kodun altinda optimize edilmis metot blogu bulunmaktadir.
         /// </summary>
         /// <param name="n"></param>
         /// <param name="k"></param>
