@@ -8,8 +8,39 @@ namespace HackerRankSolutions
 {
     public class QueensAttackII
     {
+        public int queensAttack(int n, int k, int r_q, int c_q, List<List<int>> obstacles)
+        {
+            int count = 0;
+            var obstacleSet = new HashSet<string>();
+
+            foreach (var obstacle in obstacles)
+            {
+                obstacleSet.Add($"{obstacle[0]}_{obstacle[1]}");
+            }
+
+            int[] dr = { -1, -1, -1, 0, 0, 1, 1, 1 };
+            int[] dc = { -1, 0, 1, -1, 1, -1, 0, 1 };
+
+            for (int i = 0; i < 8; i++)
+            {
+                int r = r_q + dr[i];
+                int c = c_q + dc[i];
+
+                while (r >= 1 && r <= n && c >= 1 && c <= n)
+                {
+                    if (obstacleSet.Contains($"{r}_{c}"))
+                    {
+                        break;
+                    }
+                    count++;
+                    r += dr[i];
+                    c += dc[i];
+                }
+            }
+            return count;
+        }
         /// <summary>
-        /// Asagidaki kod, sonucu dogru veriyor ancak O(n^2) zamanda calistigi icin verimli degil. Commentlenen kodun altinda optimize edilmis metot blogu bulunmaktadir.
+        /// Asagidaki kod, sonucu dogru veriyor ancak O(n^2) zamanda calistigi icin verimli degil.
         /// </summary>
         /// <param name="n"></param>
         /// <param name="k"></param>
@@ -198,36 +229,5 @@ namespace HackerRankSolutions
         //    }
         //    return count;
         //}
-        public int queensAttack(int n, int k, int r_q, int c_q, List<List<int>> obstacles)
-        {
-            int count = 0;
-            var obstacleSet = new HashSet<string>();
-
-            foreach (var obstacle in obstacles)
-            {
-                obstacleSet.Add($"{obstacle[0]}_{obstacle[1]}");
-            }
-
-            int[] dr = { -1, -1, -1, 0, 0, 1, 1, 1 };
-            int[] dc = { -1, 0, 1, -1, 1, -1, 0, 1 };
-
-            for (int i = 0; i < 8; i++)
-            {
-                int r = r_q + dr[i];
-                int c = c_q + dc[i];
-
-                while (r >= 1 && r <= n && c >= 1 && c <= n)
-                {
-                    if (obstacleSet.Contains($"{r}_{c}"))
-                    {
-                        break;
-                    }
-                    count++;
-                    r += dr[i];
-                    c += dc[i];
-                }
-            }
-            return count;
-        }
     }
 }

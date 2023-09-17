@@ -29,9 +29,8 @@ namespace HackerRankSolutions
 
 
 
-
             Console.ReadLine();
         }
-
     }
 }
+
