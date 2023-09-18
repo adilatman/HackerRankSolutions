@@ -27,10 +27,20 @@ namespace HackerRankSolutions
             //Console.WriteLine(new QueensAttackII().queensAttack(5,3,4,3,obs));
             //Console.WriteLine();
 
-
+            //List<int> a = new List<int>() { 112, 42, 83, 119 };
+            //List<int> b = new List<int>() { 56, 125, 56, 49 };
+            //List<int> c = new List<int>() { 15, 78, 101, 78 };
+            //List<int> d = new List<int>() { 62, 98, 114, 108 };
+            //List<List<int>> arr = new List<List<int>>();
+            //arr.Add(a);
+            //arr.Add(b);
+            //arr.Add(c);
+            //arr.Add(d);
+            //Console.WriteLine(new FlippingTheMatrix().flippingMatrix(arr));
 
             Console.ReadLine();
         }
+        
     }
 }
 
