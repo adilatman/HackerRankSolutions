@@ -34,11 +34,14 @@ namespace HackerRankSolutions
             {
                 j--;
             }
-            if (j<=0)
-            {
-                return "no answer";
-            }
             (word[i], word[j]) = (word[j], word[i]);
+
+            // 41. satirin muadili (swap/yer degistirme)
+            //var temp = word[j];
+            //word[j] = word[i];
+            //word[i] = temp;
+
+            //Array.Sort(word);
 
             Array.Sort(word, i + 1, word.Length - i - 1);
 
