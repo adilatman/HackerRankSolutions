@@ -36,7 +36,7 @@ namespace HackerRankSolutions
             }
             (word[i], word[j]) = (word[j], word[i]);
 
-            // 41. satirin muadili (swap/yer degistirme)
+            // 37. satirin muadili (swap/yer degistirme)
             //var temp = word[j];
             //word[j] = word[i];
             //word[i] = temp;
