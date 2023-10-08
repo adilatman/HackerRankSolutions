@@ -1,18 +1,13 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 
 namespace HackerRankSolutions
 {
-    class Program
+    public class Floyd_CityOfBlindingLights
     {
-        static void Main(string[] args)
-        {
-
-            Console.ReadLine();
-        }
-
- 
+        //todo to solve
     }
 }
-
