@@ -8,11 +8,9 @@ namespace HackerRankSolutions
     {
         static void Main(string[] args)
         {
-
+            Console.WriteLine("Lutfen istediginiz metodu cagirin!");
             Console.ReadLine();
         }
-
- 
     }
 }
 
