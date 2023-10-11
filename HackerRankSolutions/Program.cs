@@ -10,7 +10,6 @@ namespace HackerRankSolutions
         static void Main(string[] args)
         {
             
-            System.Console.WriteLine(new AppendAndDelete().appendAndDelete("asdfqwertyuighjkzxcvasdfqwertyuighjkzxcvasdfqwertyuighjkzxcvasdfqwertyuighjkzxcvasdfqwertyuighjkzxcv", "bsdfqwertyuighjkzxcvasdfqwertyuighjkzxcvasdfqwertyuighjkzxcvasdfqwertyuighjkzxcvasdfqwertyuighjkzxcv", 100));
             Console.ReadLine();
         }
     }
