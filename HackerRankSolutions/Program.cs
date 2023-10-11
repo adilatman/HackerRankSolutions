@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Xml;
 
 namespace HackerRankSolutions
 {
@@ -8,7 +9,8 @@ namespace HackerRankSolutions
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Lutfen istediginiz metodu cagirin!");
+            
+            System.Console.WriteLine(new AppendAndDelete().appendAndDelete("asdfqwertyuighjkzxcvasdfqwertyuighjkzxcvasdfqwertyuighjkzxcvasdfqwertyuighjkzxcvasdfqwertyuighjkzxcv", "bsdfqwertyuighjkzxcvasdfqwertyuighjkzxcvasdfqwertyuighjkzxcvasdfqwertyuighjkzxcvasdfqwertyuighjkzxcv", 100));
             Console.ReadLine();
         }
     }
